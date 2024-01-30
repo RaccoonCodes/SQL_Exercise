@@ -3,7 +3,8 @@ InvoiceTotal - CreditTotal - PaymentTotal AS [Balance]
 FROM Invoices
 WHERE InvoiceTotal - CreditTotal - PaymentTotal > 0
 AND InvoiceDueDate < GETDATE() + 30
-						--OUTPUT
+				
+				--OUTPUT
 --InvoiceNumber                                      Balance
 ---------------------------------------------------- ---------------------
 --39104                                              85.31
