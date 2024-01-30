@@ -1,0 +1,26 @@
+1. Create a new database named Membership. 
+
+2. Write the CREATE TABLE statements needed to implement the following 
+design in the Membership database. Include foreign key constraints. Define 
+IndividualiD and GroupiD as identity columns. Decide which columns should 
+allow null values, if any, and explain your decision. Define the Dues column 
+with a default of zero and a check constraint to allow only positive values. 
+
+3. Write the CREATE INDEX statements to create a clustered index on the 
+GroupiD column and a nonclustered index on the IndividualiD column of the 
+GroupMembership table. 
+
+4. Write an ALTER TABLE statement that adds a new column, DuesPaid, to 
+the Individuals table. Use the bit data type, disallow null values, and assign a 
+default Boolean value of False. 
+
+5. Write an ALTER TABLE statement that adds two new check constraints to the 
+Invoices table of the AP database. The first should allow 
+(1) PaymentDate to be null only if PaymentTotal is zero and 
+(2) PaymentDate to be not null only if PaymentTotal is greater than zero. The second constraint should prevent the 
+sum of PaymentTotal and CreditTotal from being greater than Invoice Total. 
+
+6. Delete the GroupMembership table from the Membership database. Then, 
+write a CREATE TABLE statement that recreates the table, this time with 
+a unique constraint that prevents an individual from being a member in the 
+same group twice.
