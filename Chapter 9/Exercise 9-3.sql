@@ -6,7 +6,7 @@ FROM Invoices
 WHERE InvoiceTotal - CreditTotal - PaymentTotal > 0
 AND InvoiceDueDate < DATEADD(month, DATEDIFF(month, 0, GETDATE()) + 1, -1);
 
-
+                            --OUTPUT
 --InvoiceNumber                                      Balance
 ---------------------------------------------------- ---------------------
 --39104                                              85.31
