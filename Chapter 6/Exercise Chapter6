@@ -1,0 +1,40 @@
+1. Write a SELECT statement that returns the same result set as this SELECT 
+statement. Substitute a subquery in a WHERE clause for the inner join. 
+    SELECT DISTINCT VendorName 
+        FROM Vendors JOIN Invoices 
+    ON Vendors.VendoriD = Invoices. VendoriD 
+    ORDER BY VendorName; 
+
+2. Write a SELECT statement that answers this question: Which invoices have 
+a PaymentTotal that's greater than the average PaymentTotal for all paid 
+invoices? Return the InvoiceNumber and InvoiceTotal for each invoice. 
+
+3. Write a SELECT statement that answers this question: Which invoices have 
+a PaymentTotal that's greater than the median PaymentTotal for all paid 
+invoices? (The median marks the midpoint in a set of values; an equal number 
+of values lie above and below it.) Return the InvoiceNumber and InvoiceTotal 
+for each invoice. 
+ 
+4. Write a SELECT statement that returns two columns from the GLAccounts 
+table: AccountNo and AccountDescription. The result set should have one 
+row for each account number that has never been used. Use a correlated 
+subquery introduced with the NOT EXISTS operator. Sort the final result set 
+by AccountNo. 
+
+5. Write a SELECT statement that returns four columns: VendorName, 
+InvoiceiD, InvoiceSequence, and InvoiceLineltemAmount for each invoice 
+that has more than one line item in the InvoiceLineitems table.  
+
+6. Write a SELECT statement that returns a single value that represents the sum 
+of the largest unpaid invoices submitted by each vendor. Use a derived table 
+that returns MAX(InvoiceTotal) grouped by VendoriD, filtering for invoices 
+with a balance due. 
+
+7. Write a SELECT statement that returns the name, city, and state of each 
+vendor that's located in a unique city and state. In other words, don't include 
+vendors that have a city and state in common with another vendor. 
+
+8. Write a SELECT statement that returns four columns: VendorName, 
+InvoiceNumber, InvoiceDate, and InvoiceTotal. Return one row per vendor, 
+representing the vendor's invoice with the earliest date. 
+
