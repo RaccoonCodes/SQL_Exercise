@@ -1,4 +1,4 @@
-USE AP
+USE AP;
 
 SELECT VendorName
 FROM Vendors
