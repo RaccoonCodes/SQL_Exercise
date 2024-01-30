@@ -18,6 +18,7 @@ JOIN Vendors
 	ON Invoices.VendorID = Vendors.VendorID
 GROUP BY AccountDescription, VendorState WITH CUBE;
 
+				--OUTPUT
 --Account                                            State LineItemSum
 ---------------------------------------------------- ----- ---------------------
 --Direct Mail Advertising                            AZ    478.00
