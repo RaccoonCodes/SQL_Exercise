@@ -4,27 +4,3 @@ Exercises comes from Murach's book: Murachs SQL Server 2019 for Developers
 All of their database examples can be downloaded are on their website:
 <link>https://www.murach.com/shop/murach-s-sql-server-2019-for-developers-detail
 
-### Exercise 9-1: 
-Write a SELECT statement that returns two columns based on the Vendors 
-table. The first column, Contact, is the vendor contact name in this format: 
-first name followed by last initial (for example, "John S.") The second 
-column, Phone, is the VendorPhone column without the area code. Only 
-return rows for those vendors in the 559 area code. Sort the result set by first 
-name, then last name.
-
-### Exercise 9-2: 
-Write a SELECT statement that returns the lnvoiceNumber and balance due 
-for every invoice with a non-zero balance and an InvoiceDueDate that's less 
-than 30 days from today. 
-
-### Exercise 9-3:
-Modify the search expression for InvoiceDueDate from the solution for 
-exercise 2. Rather than 30 days from today, return invoices due before the last 
-day of the current month. 
-
-### Exercise 9-4
-Write a summary query that uses the CUBE operator to return LineltemSum 
-(which is the sum of InvoiceLineltemAmount) grouped by Account (an alias 
-for AccountDescription) and State (an alias for VendorState). Use the CASE 
-and GROUPING function to substitute the literal value "*ALL*" for the 
-summary rows with null values.
